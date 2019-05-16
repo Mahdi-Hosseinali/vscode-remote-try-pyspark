@@ -1,8 +1,8 @@
-# Try Out Development Containers: Python
+# Try Out Development Containers: PySpark
 
 This is a sample project that lets you try out the **[VS Code Remote - Containers](https://aka.ms/vscode-remote/containers)** extension in a few easy steps.
 
-> **Note:** If you're following the quick start, you can jump to the [Things to try](#things-to-try) section. 
+This is sample for PySpark taken as a fork of the Python example
 
 ## Setting up the development container
 
@@ -30,19 +30,6 @@ Some things to try:
    - Add a breakpoint (e.g. on line 9).
    - Press <kbd>F5</kbd> to launch the app in the container.
    - Once the breakpoint is hit, try hovering over variables (e.g. the app variable on line 7), examining locals, and more.
-   - Continue, then open a local browser and go to `http://localhost:9000` and note you can connect to the server in the container
-4. **Forward another port:**
-   - Stop debugging and remove the breakpoint.
-   - Open `.vscode/launch.json`
-   - Change the server port to 5000 on line 20. (`"--port","5000"`)
-   - Press <kbd>F5</kbd> to launch the app in the container.
-   - Press <kbd>F1</kbd> and run the **Remote-Containers: Forward Port from Container...** command.
-   - Select port 5000.
-   - Click "Open Browser" in the notification that appears to access the web app on this new port.
-
-### More samples
-
-- [Tweeter App - Python and Django](https://github.com/Microsoft/python-sample-tweeterapp)
 
 ## Contributing
 

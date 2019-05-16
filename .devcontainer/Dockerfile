@@ -14,6 +14,16 @@ RUN pip install pylint
 # Install git, process tools
 RUN apt-get update && apt-get -y install git procps
 
+# Install OpenJDK-8
+RUN apt-get update && \
+    apt-get install -y openjdk-8-jdk && \
+    apt-get install -y ant && \
+    apt-get clean;
+
+
+ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
+RUN export JAVA_HOME
+
 # Install any missing dependencies for enhanced language service
 RUN apt-get install -y libicu[0-9][0-9]
 
